@@ -42,20 +42,10 @@ public class MainActivity extends AppCompatActivity implements IRecycleViewSelec
             data.add(index, String.valueOf(index));
         }
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycleView);
+
 
         // use a linear layout manager
-        mLayoutManager = new LinearLayoutManager(this);
-        mRecyclerView.setLayoutManager(mLayoutManager);
 
-        // specify an adapter (see also next example)
-        mAdapter = new RecycleViewAdapter(data, this);
-
-        mRecyclerView.setAdapter(mAdapter);
-
-        mIth.attachToRecyclerView(mRecyclerView);
-
-        mCtx = this;
 
 
 
